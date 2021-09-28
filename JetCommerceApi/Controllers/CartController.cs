@@ -33,6 +33,7 @@ namespace JetCommerceApi.Controllers
             
             return Ok(new{
                 idItem = cart.idItem,
+                idProduto = produto.idProduto,
                 quantidade = cart.quantidadeProduto,
                 nameof = produto.nomeProduto,
                 urlImg = produto.urlImg,

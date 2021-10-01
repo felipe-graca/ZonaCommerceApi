@@ -53,6 +53,21 @@ namespace JetCommerceApi.Controllers
             });
         }
 
+
+        [HttpGet("{idProduto}")]
+        public async Task<IActionResult> FindItemCarById(int idProduto)
+        {
+
+            var itemCart = _appDbContext.Carts
+                    .Where(Cart => Cart.idProduto == idProduto)
+                    .FirstOrDefault();
+            if( itemCart == null){
+                return Ok();
+            }
+            return Ok(itemCart);
+        }
+
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteItemCart(int id)
         {

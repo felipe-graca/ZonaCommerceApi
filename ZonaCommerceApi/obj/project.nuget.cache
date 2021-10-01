@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BCXZbWd3fiUUgLMjTpKXBB0mkEAvsZOZUAqvmXvgWoOUr47DEoiCU6Gc8j7wlnmV0UxydQ6fIofJKVVlWCc8oA==",
+  "dgSpecHash": "uTSXEitYlQJGlPSSeMUcU6tjfCR29mKirgVeSStteO8dYQoLSPbvmySqXSWbt29rJ9FMs0+VBFarRdHJ2rGM4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ZAZA\\Documents\\Felipe\\jet\\JetCommerceApi\\ZonaCommerceApi\\ZonaCommerceApi.csproj",
+  "projectFilePath": "C:\\Users\\ZAZA\\Documents\\Felipe\\ZonaCommerce\\ZonaCommerceApi\\ZonaCommerceApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ZAZA\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ZAZA\\.nuget\\packages\\microsoft.aspnet.cors\\5.2.7\\microsoft.aspnet.cors.5.2.7.nupkg.sha512",

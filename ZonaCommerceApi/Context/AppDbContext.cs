@@ -12,16 +12,5 @@ namespace ZonaCommerceApi.Context
         }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<Produto> Produtos { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            IConfiguration configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", false, true)
-                .Build();
-
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("ServerConnection"));
-        }
-
     }
 }

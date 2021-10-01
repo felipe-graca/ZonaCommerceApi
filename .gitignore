@@ -1,2 +1,6 @@
-appsettings.json
-appsettings.Development.json
+JetCommerceApi/appsettings.json
+JetCommerceApi/appsettings.Development.json
+
+JetCommerceApi/.vscode
+JetCommerceApi/.vs
+JetCommerceApi/bin

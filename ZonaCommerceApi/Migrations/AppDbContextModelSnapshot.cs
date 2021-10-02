@@ -59,6 +59,27 @@ namespace ZonaCommerceApi.Migrations
 
                     b.ToTable("Produtos");
                 });
+
+            modelBuilder.Entity("ZonaCommerceApi.User", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Users");
+                });
 #pragma warning restore 612, 618
         }
     }

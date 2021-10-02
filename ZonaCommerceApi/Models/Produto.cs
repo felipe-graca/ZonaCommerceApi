@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ZonaCommerceApi
+namespace ZonaCommerceApi.Models
 {
     public class Produto
     {

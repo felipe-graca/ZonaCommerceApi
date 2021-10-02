@@ -35,6 +35,21 @@ namespace ZonaCommerceApi.Migrations
                 {
                     table.PrimaryKey("PK_Produtos", x => x.idProduto);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Username = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Role = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.id);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -44,6 +59,9 @@ namespace ZonaCommerceApi.Migrations
 
             migrationBuilder.DropTable(
                 name: "Produtos");
+
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }

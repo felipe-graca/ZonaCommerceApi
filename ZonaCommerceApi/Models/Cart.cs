@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
-namespace ZonaCommerceApi
+namespace ZonaCommerceApi.Models
 {
     public class Cart
     {

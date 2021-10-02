@@ -9,7 +9,7 @@ using ZonaCommerceApi.Context;
 namespace ZonaCommerceApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20211001182822_ZonaCommerce")]
+    [Migration("20211001193116_ZonaCommerce")]
     partial class ZonaCommerce
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -60,6 +60,27 @@ namespace ZonaCommerceApi.Migrations
                     b.HasKey("idProduto");
 
                     b.ToTable("Produtos");
+                });
+
+            modelBuilder.Entity("ZonaCommerceApi.User", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

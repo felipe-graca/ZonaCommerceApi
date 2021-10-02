@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.IO;
+using ZonaCommerceApi.Models;
 
 namespace ZonaCommerceApi.Context
 {
@@ -12,5 +13,7 @@ namespace ZonaCommerceApi.Context
         }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<User> Users {get; set;}
+
     }
 }

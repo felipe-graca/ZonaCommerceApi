@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using ZonaCommerceApi.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ZonaCommerceApi.Models;
 
 namespace ZonaCommerceApi.Controllers
 {

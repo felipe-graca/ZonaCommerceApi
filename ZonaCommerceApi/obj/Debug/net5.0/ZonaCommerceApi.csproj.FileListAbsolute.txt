@@ -278,3 +278,4 @@ C:\Users\ZAZA\Documents\Felipe\ZonaCommerce\ZonaCommerceApi\obj\Debug\net5.0\Zon
 C:\Users\ZAZA\Documents\Felipe\ZonaCommerce\ZonaCommerceApi\obj\Debug\net5.0\ref\ZonaCommerceApi.dll
 C:\Users\ZAZA\Documents\Felipe\ZonaCommerce\ZonaCommerceApi\obj\Debug\net5.0\ZonaCommerceApi.pdb
 C:\Users\ZAZA\Documents\Felipe\ZonaCommerce\ZonaCommerceApi\obj\Debug\net5.0\ZonaCommerceApi.genruntimeconfig.cache
+C:\Users\ZAZA\Documents\Felipe\ZonaCommerce\ZonaCommerceApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
